@@ -1,4 +1,5 @@
 import { words } from '../constants/index.js'
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
     return (
@@ -38,6 +39,10 @@ const Hero = () => {
                             Hi, I'm David — a software developer from Virginia, focused on
                             delivering robust and scalable solutions through thoughtful code and design.
                         </p>
+                        <Button
+                        className="md:w-80 md:h-16 w-60 h-12"
+                        id="button"
+                        text="Explore my Portfolio"/>
                     </div>
                 </header>
                 {/*RIGHT: #D MODEL */}
