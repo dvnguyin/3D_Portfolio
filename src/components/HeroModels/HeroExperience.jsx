@@ -3,6 +3,7 @@ import {OrbitControls} from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { Room } from "./Room.jsx";
 import HeroLights from "./HeroLights.jsx";
+import Particles from "./Particles.jsx";
 
 const HeroExperience = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' })
@@ -21,6 +22,8 @@ const HeroExperience = () => {
             />
 
             <HeroLights />
+
+            <Particles count={75} />
 
         <group
         scale={isMobile ? 0.7 : 1}
